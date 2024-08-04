@@ -1,6 +1,41 @@
 (function ($) {
     "use strict";
 
+window.addEventListener('DOMContentLoaded', () => {
+    let intro = document.querySelector('.intro');
+    let logo = document.querySelector('.logo-header');
+    let logoLine = document.querySelectorAll('.logo-line');
+
+    setTimeout(() => {
+        logoLine.forEach((line, idx) => {
+            setTimeout(() => {
+                line.classList.add('active');
+            }, (idx + 1) * 400);
+        });
+
+        setTimeout(() => {
+            logoLine.forEach((line, idx) => {
+                setTimeout(() => {
+                    line.classList.remove('active');
+                    line.classList.add('fade');
+                }, (idx + 1) * 50);
+            });
+        }, 2000);
+
+        // Move the intro section out of view
+        setTimeout(() => {
+            intro.style.top = '-100vh';
+        }, 2500);
+    }, 2300);
+});
+
+
+
+
+
+
+
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
