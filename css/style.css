@@ -32,6 +32,8 @@ header h4{
 }
 
 
+
+
 /* Splash screen */
 
   .intro {
@@ -42,7 +44,8 @@ header h4{
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: #161616;
+    background: url("../img/breezypablo.jpg") no-repeat;
+    background-size: cover;
     transition: 1s;
   }
 
@@ -81,9 +84,10 @@ header h4{
 
 /*** Paragraphs ***/
 p {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 23px; /* Adjust this size as needed */
-    color: #636363; /* This is the correct color */
+    font-family: 'antic', sans-serif;
+    font-size: 20px; /* Adjust this size as needed */
+    color: #333333; /* This is the correct color */
+    font-weight: 800;
 }
 
 /*** Headings ***/
@@ -665,7 +669,7 @@ footer {
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -714,3 +718,304 @@ footer {
     color: black !important;
 }
 
+
+
+/* Chatgpt css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#roadmap {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#roadmap h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.roadmap-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    background: #f0f8ff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.roadmap-item:hover {
+    transform: scale(1.05);
+}
+
+.roadmap-icon {
+    font-size: 3em;
+    margin-right: 20px;
+}
+
+.roadmap-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ee8d0a;
+}
+
+.roadmap-content p {
+    font-size: 1em;
+    color: #555;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.roadmap-item {
+    animation: slideIn 1s ease-out;
+}
+
+
+#breezy-tokenomics {
+    position: relative;
+    background: url('../img/breezycom.jpg') no-repeat center top;
+    background-size: cover;
+    padding: 34px 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5%;
+}
+
+#breezy-tokenomics::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+    z-index: 1;
+}
+
+.container-tok {
+    position: relative;
+    z-index: 2; /* Make sure the content is above the overlay */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 338px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.content h2 {
+    font-size: 5.5em;
+    margin-bottom: 20px;
+    color: #ee8d0a; /* Bright yellow to stand out */
+}
+
+.container-tok p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.content {
+    animation: bounce 2s infinite;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+
+/* General Styling */
+#breezy-ideas {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#breezy-ideas .h-100 {
+    height: 100%;
+}
+
+#breezy-ideas h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#breezy-ideas p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+#breezy-ideas .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#breezy-ideas .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #breezy-ideas h1 {
+        font-size: 2rem;
+    }
+
+    #breezy-ideas p {
+        font-size: 0.9rem;
+    }
+
+    #breezy-ideas .h-100 {
+        text-align: center;
+    }
+
+    #breezy-ideas img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #breezy-ideas h1 {
+        font-size: 1.75rem;
+    }
+
+    #breezy-ideas p {
+        font-size: 0.8rem;
+    }
+
+    #breezy-ideas img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* General Styling */
+#breezy-story {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#breezy-story h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.story-text {
+    text-align: left;
+    margin: 0 0 1.5rem 0;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.breezy-image {
+    width: 60%;
+    height: auto;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #breezy-story h1 {
+        font-size: 2rem;
+    }
+
+    .story-text {
+        font-size: 0.9rem;
+    }
+
+    .breezy-image {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    #breezy-story h1 {
+        font-size: 1.75rem;
+    }
+
+    .story-text {
+        font-size: 0.8rem;
+    }
+
+    .breezy-image {
+        width: 100%;
+    }
+}
