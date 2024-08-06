@@ -63,6 +63,7 @@ header h4{
   background: url("../img/breezypablo.jpg") no-repeat;
   background-size: cover;
   transition: 1s;
+  z-index: 2;
 }
 
 .logo-header {
@@ -110,8 +111,8 @@ header h4{
 
 /*** Paragraphs ***/
 p {
-    font-family: 'antic', sans-serif;
-    font-size: 20px; /* Adjust this size as needed */
+    font-family: "Caveat", cursive;
+    font-size: 26px; /* Adjust this size as needed */
     color: #333333; /* This is the correct color */
     font-weight: 800;
 }
@@ -129,8 +130,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 800 !important;
+     font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     color: var(--heading-color); /* Apply color to all headings */
 }
 
@@ -139,6 +141,11 @@ h6,
 .breezy-story h1, {
     font-size: 85px !important;
 }
+
+/*div .hero-header {
+    background: url('img/breezybackground.jpg') no-repeat !important;
+    background-size: cover;
+}*/
 
 
 
@@ -165,14 +172,9 @@ h6,
 .navbar {
     background-color: transparent !important; /* Ensure transparency */
     box-shadow: none; /* Remove any shadow if present */
+    z-index: 1;
 }
 
-/* Ensure sticky positioning */
-.navbar.sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Optional: to ensure the navbar stays on top of other elements */
-}
 
 
 
@@ -394,6 +396,7 @@ h6,
 
 #breezy-ideas {
     overflow: hidden;
+    margin-top: 10%;
 }
 
 
@@ -834,9 +837,8 @@ body {
 
 #breezy-tokenomics {
     position: relative;
-    background: url('../img/breezycom.jpg') no-repeat center top;
+    background: url('../img/beach.jpg') no-repeat center top;
     background-size: cover;
-    padding: 34px 0;
     text-align: center;
     color: #fff;
     margin-bottom: 5%;
@@ -1016,7 +1018,6 @@ body {
 /* General Styling */
 #breezy-story {
     padding: 50px 0;
-    background-color: #f9f9f9;
 }
 
 #breezy-story h1 {
@@ -1248,3 +1249,14 @@ body {
 
 
                   
+/* Add this to your stylesheet */
+.navbar.navbar-transparent {
+    background-color: transparent !important; /* Make the background transparent */
+    box-shadow: none !important; /* Remove any shadow */
+    border: none !important; /* Remove borders if any */
+}
+
+.navbar.navbar-transparent .navbar-brand,
+.navbar.navbar-transparent .navbar-nav .nav-link {
+    color: #fff !important; /* Optional: Adjust text color for visibility */
+}
