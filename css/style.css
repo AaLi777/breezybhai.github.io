@@ -38,51 +38,53 @@ header h4{
 
 /* Splash screen */
 
+.intro {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/breezypablo.jpg") no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+
+.logo-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.logo-line {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+  font-size: 100px;
+}
+
+.logo-line.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.logo-line.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1200px) {
   .intro {
-
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: url("../img/breezypablo.jpg") no-repeat;
-    background-size: cover;
-    transition: 1s;
+    background-position: center center;
   }
+}
 
-
-  .logo-header{
-
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-  }
-
-  .logo-line {
-
-    position: relative;
-    display: inline-block;
-    bottom: -20px;
-    opacity: 0;
-    font-size: 100px;
-  }
-
-  .logo-line.active{
-
-    bottom: 0;
-    opacity: 1;
-    transition: ease-in-out 0.5s;
-  }
-
-  .logo-line.fade{
-
-    bottom: 150px;
-    opacity: 0;
-    transition: ease-in-out 0.5s;
-  }
 
 /*** Paragraphs ***/
 p {
